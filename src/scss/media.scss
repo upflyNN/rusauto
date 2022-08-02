@@ -1,0 +1,3165 @@
+@import "variables.scss";
+
+/*НАЧАЛО АДАПТИВА 668*/
+@media(min-width: 668px) {
+
+    /*НАЧАЛО ОБЩИХ СТИЛЕЙ 668*/
+    html {
+        font-size: 1.497005988023952vw;
+    }
+
+    body {
+        padding-bottom: 5.7rem;
+    }
+
+    section {
+        margin-bottom: 8rem;
+    }
+
+    h1 {
+        font-size: 2.8rem;
+        line-height: 3.4rem;
+    }
+
+    .buy {
+        max-width: unset;
+        min-width: 14.9rem;
+        padding: 0.7rem;
+
+        svg {
+            display: none;
+        }
+    }
+
+    .buy-text {
+        display: block;
+    }
+
+    .buy-plus {
+        display: none;
+    }
+
+    .title {
+        max-width: 53.2rem;
+        font-size: 2.4rem;
+        line-height: 3rem;
+    }
+
+    .desc {
+        font-size: 1.4rem;
+        max-width: 50.8rem;
+    }
+
+    .desc-maxwidth {
+        max-width: unset;
+    }
+
+    .wrapper {
+        padding: 0 4.4rem;
+    }
+
+    .scroll {
+        padding: 0 4.4rem;
+    }
+
+    /*НАЧАЛО СТИЛЕЙ МОБИЛЬНОГО МЕНЮ 668*/
+    .mobile-menu,
+    .modal-choice {
+        .header-fixed {
+            .header-bottom__logo {
+                width: 5.6rem;
+                height: 4rem;
+                margin-left: 6rem;
+            }
+
+            .header-bottom__request {
+                flex-direction: row;
+                gap: 4rem;
+            }
+
+            .header-bottom__request-btn {
+                display: none;
+            }
+        }
+    }
+
+    .mobile-menu__list-item {
+        font-size: 1.6rem;
+        line-height: 2.6rem;
+    }
+
+    /*КОНЕЦ СТИЛЕЙ МОБИЛЬНОГО МЕНЮ 668*/
+
+    /*НАЧАЛО СТИЛЕЙ СЕКЦИИ ВЫ НЕДАВНО СМОТРЕЛИ 668*/
+    .recently__card {
+        min-width: 28.8rem;
+        min-height: 9.4rem;
+        padding: 0;
+    }
+
+    .recently__card-wrapper {
+        gap: 1.2rem;
+    }
+
+    .recently__card-image {
+        width: 11.6rem;
+        height: 7.2rem;
+    }
+
+    .recently__card-info-cost-new {
+        font-size: 1.8rem;
+        line-height: 2.3rem;
+    }
+
+    .recently__card-info-name {
+        font-size: 1.6rem;
+        line-height: 2rem;
+        max-width: 20rem;
+    }
+
+    /*КОНЕЦ СТИЛЕЙ СЕКЦИИ ВЫ НЕДАВНО СМОТРЕЛИ 668*/
+
+    /*НАЧАЛО СТИЛЕЙ МОДАЛЬНОГО КАТАЛОГА 668*/
+    .catalog-modal {
+
+        .header {
+            .header-bottom__request {
+                right: 4.4rem;
+                top: 2.6rem;
+            }
+
+            .header-bottom__logo {
+                margin: 0;
+            }
+        }
+
+        .scroll {
+            padding: 0;
+            overflow-x: unset;
+        }
+
+        .spares__container {
+            display: flex;
+            flex-direction: column;
+            gap: 1.6rem;
+        }
+
+        .spares__item {
+            max-width: none;
+            margin: 0;
+        }
+
+        .spares__item-info {
+            display: block;
+        }
+
+        .spares__item-img {
+            display: none;
+        }
+
+        .spares__item-info-models {
+            display: inline-flex;
+            font-size: 1.4rem;
+            line-height: 1.8rem;
+            margin-bottom: 0;
+        }
+
+        .spares__item-info-title {
+            max-width: none;
+            text-align: left;
+            margin-bottom: 1.6rem;
+            font-size: 1.4rem;
+            line-height: 1.8rem;
+            min-height: fit-content;
+        }
+
+        .spares__item-info-models-item {
+            font-size: 1.4rem;
+            line-height: 2rem;
+        }
+    }
+
+    .catalog-modal__container {
+        flex-direction: row;
+        padding: 0 4.4rem;
+        gap: 1.6rem;
+        justify-content: space-between;
+    }
+
+    .catalog-modal__groups {
+        max-height: calc(100vh - 19.8rem);
+        padding-right: 0.8rem;
+    }
+
+    .catalog-modal__groups-container {
+        padding: 0;
+    }
+
+    .catalog-modal__groups-wrapper {
+        width: 26.2rem;
+    }
+
+    .catalog-modal__spares {
+        .catalog-modal__title {
+            display: block;
+        }
+
+        .wrapper {
+            padding: 0;
+        }
+    }
+
+    .catalog-modal__spares {
+        max-height: calc(100vh - 19.8rem);
+        overflow-y: auto;
+        padding-bottom: 1.6rem;
+
+        &::-webkit-scrollbar {
+            width: 2px;
+        }
+
+        &::-webkit-scrollbar-thumb {
+            background-color: #00A0E3;
+        }
+
+        &::-webkit-scrollbar-track {
+            background-color: transparent;
+        }
+    }
+
+    .catalog-modal__title {
+        font-size: 1.8rem;
+        line-height: 2.4rem;
+    }
+
+    /*КОНЕЦ СТИЛЕЙ МОДАЛЬНОГО КАТАЛОГА 668*/
+
+    /*СЕКЦИИ, У КОТОРЫХ МЕНЬШЕ МАРДЖИН 668*/
+    .about,
+    .catalog-about {
+        margin-bottom: 4rem;
+    }
+
+    /*СТИЛИ ДЛЯ КАРТОЧЕК КАТАЛОГА НА ГЛАВНОЙ И В МОДАЛЬНОМ КАТАЛОГЕ 668*/
+    .spares__item-info-models {
+        display: none;
+        flex-wrap: wrap;
+        grid-row-gap: 1.2rem;
+    }
+
+    .spares__item-info-models-item {
+        margin-right: 1.2rem;
+        display: inline-block;
+        padding: 0.4rem 0.8rem;
+        font-size: 1.2rem;
+        line-height: 1.5rem;
+        color: $blue;
+        transition: 0.3s ease;
+        background-color: #FAFAFA;
+
+        &:hover {
+            color: #00A0E3;
+        }
+
+        &:active,
+        &:focus,
+        &:focus-within {
+            color: #0091CE;
+        }
+
+        &:nth-of-type(2n) {
+            margin-right: 0;
+        }
+    }
+
+    /*НАЧАЛО СТИЛЕЙ ШАПКИ 668*/
+    .header {
+
+        .header-bottom__request-btn,
+        .header-bottom__request-phone span {
+            display: inline-block;
+        }
+    }
+
+    .header-fixed {
+        top: -8rem;
+
+        .header-top__location-text {
+            display: block;
+            font-size: 1.2rem;
+            line-height: 1.5rem;
+            color: #064E8C;
+        }
+
+        .header-bottom__logo {
+            margin-left: 11.8rem;
+        }
+    }
+
+    .header-bottom__burger-icon {
+        width: 2.7rem;
+        height: 2.7rem;
+
+        &::before {
+            top: 0.6rem;
+        }
+
+        &::after {
+            bottom: 0.6rem;
+        }
+    }
+
+    .header-bottom__logo {
+        height: 4rem;
+        margin-left: 11.8rem;
+    }
+
+    .header-bottom__request {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 0.8rem;
+    }
+
+    .header-bottom__request-phone {
+        svg {
+            display: none;
+        }
+
+        span {
+            display: inline-block;
+            font-weight: 500;
+            font-size: 1.2rem;
+            line-height: 1.5rem;
+        }
+    }
+
+    .header-bottom__request-btn {
+        display: inline-block;
+        padding: 0.5rem 1.9rem;
+        background-color: #00A0E3;
+        color: #fff;
+        font-weight: 500;
+        font-size: 1.2rem;
+        line-height: 1.5rem;
+        transition: 0.3s ease;
+
+        &:active,
+        &:focus,
+        &:focus-within {
+            background-color: #0091CE;
+        }
+    }
+
+    /*КОНЕЦ СТИЛЕЙ ШАПКИ 668*/
+
+    /*НАЧАЛО СТИЛЕЙ ТАББАРА 668*/
+    .tab-bar__item {
+        display: inline-flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .tab-bar__item.active {
+        .tab-bar__item-name {
+            color: #00A0E3;
+        }
+    }
+
+    .tab-bar__item-name {
+        display: block;
+        margin-top: 0.4rem;
+        line-height: 1.3rem;
+        color: #064E8C;
+    }
+
+    .tab-bar__item-basket span {
+        right: 0.7rem;
+    }
+
+    /*КОНЕЦ СТИЛЕЙ ТАББАРА 668*/
+
+    /*НАЧАЛО СТИЛЕЙ МОДАЛКИ С ВЫБОРОМ ГОРОДА 668*/
+    .modal-choice__title {
+        font-size: 1.8rem;
+        line-height: 2.2rem;
+    }
+
+    .modal-choice__city-list-wrapper {
+        max-height: calc(100vh - 24rem);
+    }
+
+    /*КОНЕЦ СТИЛЕЙ МОДАЛКИ С ВЫБОРОМ ГОРОДА 668*/
+
+    /*НАЧАЛО СТИЛЕЙ ХЛЕБНЫХ КРОШЕК 668*/
+    .bread-crumbs {
+        .back__wrapper {
+            display: none;
+        }
+    }
+
+    .bread-crumbs__wrapper {
+        display: inline-flex;
+        align-items: center;
+        gap: 3.2rem;
+        grid-row-gap: 1rem;
+        flex-wrap: wrap;
+        font-size: 1.2rem;
+        line-height: 1.5rem;
+    }
+
+    .bread-crumbs__item {
+        color: #00A0E3;
+        position: relative;
+
+        &::before {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            width: 0;
+            height: 1px;
+            background-color: #00A0E3;
+            left: 0;
+            transition: 0.3s ease;
+        }
+
+        &::after {
+            content: '';
+            position: absolute;
+            width: 1.6rem;
+            height: 1px;
+            right: -2.4rem;
+            top: calc(50% - 0.5px);
+            background-color: #00A0E3;
+        }
+
+        &:hover {
+            &::before {
+                width: 100%;
+            }
+        }
+
+        &:nth-last-of-type(1) {
+            &::after {
+                background-color: #A3A8AB;
+            }
+        }
+    }
+
+    .bread-crumbs__current {
+        color: #A3A8AB;
+    }
+
+    /*КОНЕЦ СТИЛЕЙ ХЛЕБНЫХ КРОШЕК 668*/
+
+    /*КОНЕЦ ОБЩИХ СТИЛЕЙ 668*/
+
+
+
+    /*НАЧАЛО СТИЛЕЙ ГЛАВНОЙ СТРАНИЦЫ 668*/
+
+    /*НАЧАЛО СТИЛЕЙ ГЛАВНОГО ЭКРАНА 668*/
+    .main {
+        padding: 5.6rem 0 4.8rem;
+
+        .title {
+            max-width: 31.6rem;
+        }
+
+        .desc {
+            max-width: 30.2rem;
+            margin: 0;
+
+        }
+    }
+
+    .swiper-main__item {
+        position: relative;
+        padding: 0 4.4rem;
+    }
+
+    .swiper-main__item-wrapper {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .btn-main__wrapper {
+        text-align: left;
+        margin-top: 3rem;
+        margin-left: 1.1rem;
+    }
+
+    .swiper-main__item-info-image {
+        display: block;
+        width: 21.6rem;
+        height: 14.6rem;
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+
+    .swiper-main__pagination {
+        margin-top: 2.4rem;
+
+        .swiper-pagination-bullet {
+            width: 0.6rem;
+            height: 0.6rem;
+        }
+    }
+
+    /*КОНЕЦ СТИЛЕЙ ГЛАВНОГО ЭКРАНА 668*/
+
+    /*НАЧАЛО СТИЛЕЙ СЕКЦИИ С ИКОНКАМИ 668*/
+    .desc-icon__container {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+
+    .desc-icon__item {
+        margin-bottom: 0;
+        max-width: 17.3rem;
+    }
+
+    .desc-icon__text-title {
+        font-size: 1.4rem;
+        line-height: 2rem;
+    }
+
+    /*КОНЕЦ СТИЛЕЙ СЕКЦИИ С ИКОНКАМИ 668*/
+
+    /*НАЧАЛО СТИЛЕЙ СЕКЦИИ ОРИГИНАЛЬНЫЕ ЗАПЧАСТИ 668*/
+    .spares__container {
+        max-width: 50.6rem;
+        grid-column-gap: 5.6rem;
+        grid-template-columns: repeat(2, 18.2rem);
+        justify-content: center;
+    }
+
+    .spares__item {
+        margin: auto;
+        align-items: center;
+        max-width: 18.2rem;
+    }
+
+    .spares__item-img {
+        width: 18.2rem;
+        height: 11.3rem;
+    }
+
+    .spares__item-info-title {
+        min-height: 5.2rem;
+        max-width: 14.5rem;
+        font-size: 1.6rem;
+        line-height: 2.6rem;
+    }
+
+    /*КОНЕЦ СТИЛЕЙ СЕКЦИИ ОРИГИНАЛЬНЫЕ ЗАПЧАСТИ 668*/
+
+    /*НАЧАЛО СТИЛЕЙ СЕКЦИИ ТРАНСПОРТНЫЕ КОМПАНИИ, С КОТОРЫМИ МЫ РАБОТАЕМ 668*/
+
+    .swiper-companies {
+        .swiper-wrapper {
+            gap: 3.92rem;
+        }
+    }
+
+    .companies__banner-text {
+        max-width: 40rem;
+    }
+
+    /*КОНЕЦ СТИЛЕЙ СЕКЦИИ ТРАНСПОРТНЫЕ КОМПАНИИ, С КОТОРЫМИ МЫ РАБОТАЕМ 668*/
+
+    /*НАЧАЛО СТИЛЕЙ СЕКЦИИ КАТАЛОГ 668*/
+    .catalog__container {
+        max-width: none;
+    }
+
+    .catalog__stock-title {
+        font-size: 2rem;
+        line-height: 2.6rem;
+    }
+
+    .catalog__stock-card {
+        padding: 1.4rem 1.6rem 1.3rem;
+        min-height: fit-content;
+
+        .btn-arrow {
+            position: relative;
+            transform: none;
+            margin-top: 2.2rem;
+            left: unset;
+            bottom: unset;
+        }
+    }
+
+    .catalog__stock-card-time {
+        position: absolute;
+        right: 0.8rem;
+        top: 0.8rem;
+    }
+
+    .catalog__stock-card-container {
+        justify-content: flex-start;
+        gap: 3.9rem;
+    }
+
+    .catalog__stock-card-img {
+        width: 11.5rem;
+        height: 7.5rem;
+    }
+
+    .catalog__stock-card-name {
+        font-size: 1.4rem;
+        line-height: 2.2rem;
+        margin-bottom: 1rem;
+    }
+
+    .catalog__sections {
+        justify-content: space-between;
+        grid-template-columns: repeat(3, 4fr);
+        grid-row-gap: 2.4rem;
+        grid-column-gap: 2.6rem;
+    }
+
+    .catalog__sections-item {
+        min-height: 11rem;
+        align-items: flex-end;
+    }
+
+    .catalog__sections-item-title {
+        font-size: 1.4rem;
+        line-height: 2.2rem;
+        max-width: 91%;
+    }
+
+    .catalog__sections-item-image {
+        right: -6.4rem;
+        width: 14.9rem;
+        height: 9.4rem;
+        top: calc(50% - 4.7rem);
+    }
+
+    .catalog__stock-card-cost-new {
+        font-size: 1.6rem;
+        line-height: 2rem;
+    }
+
+    /*КОНЕЦ СТИЛЕЙ СЕКЦИИ КАТАЛОГ 668*/
+
+    /*НАЧАЛО СТИЛЕЙ СЕКЦИИ НАШИ ПАРТНЕРЫ 668*/
+    .swiper-partners {
+        .swiper-wrapper {
+            gap: 4rem;
+        }
+    }
+
+    .partners__logo {
+        width: 8rem;
+        height: 8rem;
+    }
+
+    /*КОНЕЦ СТИЛЕЙ СЕКЦИИ НАШИ ПАРТНЕРЫ 668*/
+
+    /*НАЧАЛО СТИЛЕЙ СЕКЦИИ НАШИ НОВОСТИ 668*/
+    .news__container {
+        grid-template-columns: repeat(2, 6fr);
+        grid-column-gap: 3.2rem;
+    }
+
+    .news__item {
+        max-width: 27.6rem;
+    }
+
+    .news__item-text {
+        margin-bottom: 3.2rem;
+    }
+
+    /*КОНЕЦ СТИЛЕЙ СЕКЦИИ НАШИ НОВОСТИ 668*/
+
+    /*НАЧАЛО СТИЛЕЙ СЕКЦИИ КОНТАКТЫ 668*/
+    .contacts__container {
+        justify-content: space-between;
+        flex-direction: row;
+        gap: unset;
+    }
+
+    .contacts__info-item-text {
+        font-size: 1.4rem;
+        line-height: 1.8rem;
+    }
+
+    .contacts__map {
+        width: 30.7rem;
+        height: 31.5rem;
+    }
+
+    /*КОНЕЦ СТИЛЕЙ СЕКЦИИ КОНТАКТЫ 668*/
+
+    /*НАЧАЛО СТИЛЕЙ СЕКЦИИ О КОМПАНИИ 668*/
+
+    .about__container {
+        display: flex;
+        gap: 3.2rem;
+    }
+
+    .about__logo {
+        display: block;
+        flex-shrink: 0;
+        width: 16rem;
+        height: 11.5rem;
+
+        img {
+            width: 100%;
+            height: auto;
+        }
+    }
+
+    /*КОНЕЦ СТИЛЕЙ СЕКЦИИ О КОМПАНИИ 668*/
+
+    /*НАЧАЛО СТИЛЕЙ ФУТЕРА 668*/
+    .footer {
+        padding: 4rem 0 3.2rem;
+    }
+
+    .footer__container,
+    .footer__copyright {
+        max-width: none;
+    }
+
+    .footer__info {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .footer__info-contacts {
+        gap: 1.6rem;
+        width: 100%;
+        max-width: 33.8rem;
+    }
+
+    .footer__info-contacts-feedback,
+    .footer__info-contacts-address {
+        max-width: 16.1rem;
+    }
+
+    .footer__info-images {
+        margin-bottom: 0;
+    }
+
+    .footer__copyright {
+        margin-top: 4rem;
+    }
+
+    .footer__copyright-upfly-wrapper {
+        margin-top: 1.6rem;
+    }
+
+    /*КОНЕЦ СТИЛЕЙ ФУТЕРА 668*/
+
+    /*КОНЕЦ СТИЛЕЙ ГЛАВНОЙ СТРАНИЦЫ 668*/
+
+    /*#################################################################################################################################*/
+    /*НАЧАЛО СТИЛЕЙ КАТАЛОГА 1 УРОВНЯ 668*/
+
+    /*КАТАЛОГ АВТОЗАПЧАСТЕЙ 668*/
+    .catalog-1lvl__container {
+        flex-direction: row;
+        gap: 2.4rem;
+
+        .catalog__sections-item {
+            min-height: 19.2rem;
+        }
+    }
+
+    /*КОНЕЦ КАТАЛОГ АВТОЗАПЧАСТЕЙ 668*/
+
+    /*НАЧАЛО СТИЛЕЙ СЕКЦИИ ПРО КАТАЛОГ АВТОЗАПЧАСТЕЙ 668*/
+    .catalog-about {
+        .js-hide {
+            height: 16.2rem;
+        }
+    }
+
+    .catalog-about__banner {
+        position: relative;
+        justify-content: space-between;
+        padding: 0 0.4rem 0 3.2rem;
+        z-index: 0;
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+        }
+
+        &::before {
+            content: "";
+            position: absolute;
+            left: -16.5rem;
+            top: 0;
+            width: 42rem;
+            height: 30.3rem;
+            background-image: url(../img/footer/logo.svg);
+            background-position: center center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            z-index: -1;
+        }
+    }
+
+    .catalog-about__banner-image {
+        display: block;
+        width: 21.1rem;
+        height: 12.8rem;
+    }
+
+    .catalog-about__banner-info {
+        &::before {
+            content: none;
+        }
+    }
+
+    /*КОНЕЦ СТИЛЕЙ СЕКЦИИ ПРО КАТАЛОГ АВТОЗАПЧАСТЕЙ 668*/
+
+    /*КОНЕЦ СТИЛЕЙ КАТАЛОГА 1 УРОВНЯ 668*/
+
+
+
+    /*#################################################################################################################################*/
+    /*НАЧАЛО СТИЛЕЙ КАТАЛОГА 3 УРОВНЯ 668*/
+    .to-encyclopedia__info-text {
+        -ms-line-clamp: 4;
+        -webkit-line-clamp: 4;
+        line-clamp: 4;
+        max-width: 49rem;
+    }
+
+    /*КОНЕЦ СТИЛЕЙ КАТАЛОГА 3 УРОВНЯ 668*/
+
+    /*#################################################################################################################################*/
+    /*НАЧАЛО СТИЛЕЙ МАРОК 668*/
+    .brands {
+        .desc {
+            max-width: 49rem;
+        }
+    }
+
+    .brands__scroll {
+        padding: 0 4.4rem;
+        overflow-x: unset;
+    }
+
+    .brands__wrapper {
+        display: grid;
+        grid-template-columns: repeat(3, 4fr);
+        grid-column-gap: 2.6rem;
+        grid-row-gap: 2.4rem;
+    }
+
+    .brands__item {
+        padding: 0.8rem;
+        width: auto;
+        height: 11.9rem;
+    }
+
+    .brands__item-image {
+        width: 10.5rem;
+        height: 6.4rem;
+    }
+
+    .brands__item-name {
+        // margin-top: 1.3rem;
+        font-size: 1.4rem;
+        line-height: 1.7rem;
+    }
+
+    /*КОНЕЦ СТИЛЕЙ МАРОК 668*/
+
+    /*#################################################################################################################################*/
+    /*НАЧАЛО СТИЛЕЙ КАТАЛОГА 4 УРОВНЯ 668*/
+    .catalog-4lvl {
+        .js-hide {
+            height: 4.4rem;
+        }
+    }
+
+    .category__scroll {
+        padding: 0 4.4rem;
+    }
+
+    .category__container {
+        gap: 1.6rem;
+    }
+
+    .category__item {
+        font-size: 1.4rem;
+        line-height: 1.8rem;
+        padding: 2rem 3.2rem;
+    }
+
+    .catalog-4lvl__catalog-item-image {
+        width: 17.2rem;
+        height: 10.8rem;
+        margin-top: 2.4rem;
+    }
+
+    .catalog-4lvl__catalog-lines-item-card {
+        align-items: flex-start;
+        height: 12.9rem;
+        min-height: unset;
+        align-items: center;
+    }
+
+    .catalog-4lvl__catalog-lines-item-info {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .catalog-4lvl__catalog-lines-item-info-top {
+        max-width: 19.6rem;
+        height: fit-content;
+    }
+
+    .catalog-4lvl__catalog-item-name {
+        margin-top: 0.8rem;
+    }
+
+    .catalog-4lvl__catalog-item-article {
+        margin-top: 1.2rem;
+        font-size: 1.2rem;
+        line-height: 1.5rem;
+    }
+
+    .catalog-4lvl__catalog-item-availability {
+        margin-top: 0.8rem;
+        font-size: 1.2rem;
+        line-height: 1.5rem;
+    }
+
+    .catalog-4lvl__catalog-item-bottom {
+        flex-direction: column;
+        gap: 1.2rem;
+        margin: unset;
+        justify-content: unset;
+        max-width: unset;
+        align-items: center;
+    }
+
+    .catalog-4lvl__catalog-item-bottom-buttons {
+        min-height: 3.2rem;
+        min-width: 14.9rem;
+        text-align: center;
+    }
+
+    .catalog-4lvl__catalog-item-bottom-buttons-basket {
+        width: 100%;
+        height: 100%;
+        padding: 0.45rem 0.8rem;
+
+        form {
+            width: auto;
+        }
+    }
+
+    .catalog-4lvl__catalog-item-cost {
+        align-items: center;
+    }
+
+
+    .catalog-4lvl__catalog-item-image-label {
+        position: absolute;
+        top: 0;
+        left: 0;
+        max-width: 17.2rem;
+        overflow: hidden;
+    }
+
+    .catalog-4lvl__catalog-lines-item-wrapper {
+        position: relative;
+    }
+
+    /*КОНЕЦ СТИЛЕЙ МАРОК КАТАЛОГА 4 УРОВНЯ 668*/
+
+    /*#################################################################################################################################*/
+    /*НАЧАЛО СТИЛЕЙ МОДАЛЬНЫХ ФИЛЬТРОВ 668*/
+    .catalog-4lvl__filters-clean {
+        font-size: 1.4rem;
+        line-height: 1.8rem;
+    }
+
+    .filters-modal__header-title {
+        margin-left: -4.55rem;
+
+
+        font-size: 1.6rem;
+        line-height: 2rem;
+    }
+
+    /*КОНЕЦ СТИЛЕЙ МОДАЛЬНЫХ ФИЛЬТРОВ 668*/
+}
+
+/*КОНЕЦ АДАПТИВА 668*/
+
+/*НАЧАЛО АДАПТИВА 1024*/
+@media(min-width: 1024px) {
+
+    /*НАЧАЛО ОБЩИХ СТИЛЕЙ 1024*/
+    html {
+        font-size: 0.9765625vw;
+    }
+
+    body {
+        padding-bottom: 0;
+    }
+
+    section {
+        margin-bottom: 11.2rem;
+    }
+
+    h1 {
+        font-size: 3.8rem;
+        line-height: 5.3rem;
+    }
+
+    .buy {
+        min-width: 20.2rem;
+    }
+
+    .title {
+        max-width: none;
+        margin-bottom: 4.8rem;
+        font-size: 2.8rem;
+        line-height: 3.8rem;
+    }
+
+    .title-desc {
+        margin-bottom: 1.2rem;
+    }
+
+    .desc {
+        margin-bottom: 4.8rem;
+        font-size: 1.4rem;
+        line-height: 2.6rem;
+        max-width: 58.6rem;
+    }
+
+    .btn {
+        &:hover {
+            background-color: #00A0E3;
+
+            &::before {
+                border-bottom: 3.8rem solid #00A0E3;
+            }
+
+            &::after {
+                border-top: 3.8rem solid #00A0E3;
+            }
+        }
+    }
+
+    .wrapper {
+        padding: 0 6.4rem;
+    }
+
+    .btn__wrapper {
+        margin-top: 5.6rem;
+    }
+
+    .btn-main {
+        &:hover {
+            &::before {
+                border-bottom: 3.2rem solid #00A0E3;
+            }
+
+            &::after {
+                border-top: 3.2rem solid #00A0E3;
+            }
+        }
+    }
+
+    .close {
+
+        &:hover {
+
+            svg path {
+                fill: #00A0E3;
+            }
+        }
+    }
+
+    /*НАЧАЛО СТИЛЕЙ ТАББАРА 1024*/
+    .tab-bar {
+        display: none;
+    }
+
+    /*КОНЕЦ СТИЛЕЙ ТАББАРА 1024*/
+
+    /*КАСТОМИЗАЦИЯ СВАЙПЕРА 1024*/
+    .swiper {
+        .swiper-wrapper {
+            gap: unset;
+        }
+    }
+
+    .swiper-not-mobile {
+        padding: 0 6.4rem;
+        display: block;
+        overflow-x: hidden;
+    }
+
+    .scroll {
+        padding: 0;
+        overflow-x: unset;
+    }
+
+    .swiper-buttons {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 5.6rem;
+        gap: 6.4rem;
+    }
+
+    .swiper-button-arrow-prev,
+    .swiper-button-arrow-next {
+        position: static;
+        width: 2.6rem;
+        height: 1.7rem;
+        margin: 0;
+
+        &::after {
+            content: none;
+        }
+
+        svg {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+
+            path {
+                transition: 0.3s ease;
+            }
+        }
+
+        &:hover {
+            svg path {
+                stroke: #00A0E3;
+            }
+        }
+    }
+
+    // .swiper-button-prev.swiper-button-disabled,
+    // .swiper-button-next.swiper-button-disabled {
+    //     opacity: 1;
+    // }
+
+    /*КОНЕЦ КАСТОМИЗАЦИИ СВАЙПЕРА 1024*/
+
+    /*НАЧАЛО СТИЛЕЙ ШАПКИ 1024*/
+    .header {
+
+        .header-bottom__search,
+        .header-bottom__links {
+            display: flex;
+        }
+    }
+
+    .header-fixed {
+        top: -8.8rem;
+
+        .header-top__location {
+            display: none;
+        }
+
+        .header-bottom__logo {
+            margin: 0;
+        }
+
+        .header-bottom__request-btn {
+            display: none;
+        }
+
+        .header-top__links-icons {
+            display: flex;
+        }
+
+        .header-bottom__search-example {
+            display: none;
+        }
+    }
+
+    .header-top {
+        display: block;
+        padding: 1.6rem 0 1.2rem;
+    }
+
+    .header-top__location {
+        position: relative;
+    }
+
+    .header-top__location-wrapper {
+        display: flex;
+        align-items: center;
+        gap: 0.8rem;
+        height: fit-content;
+    }
+
+    .choice-city {
+        display: block;
+        position: absolute;
+        left: 0;
+        top: calc(100% + 0.8rem);
+        width: 33.1rem;
+        padding: 1.6rem 2.4rem;
+        background-color: #ffffff;
+        box-shadow: 3px 4px 8px rgba(0, 0, 0, 0.04);
+        z-index: 1000;
+
+        .btn-main__wrapper,
+        .desc {
+            margin: 0;
+        }
+
+        .desc {
+            text-align: left;
+        }
+    }
+
+    .choice-city__buttons {
+        margin-top: 2.4rem;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .choice-city__link {
+        font-weight: 500;
+        color: #064E8C;
+        position: relative;
+
+        &::after {
+            content: '';
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            background-color: #064E8C;
+            width: 0;
+            height: 1px;
+            transition: 0.3s ease;
+        }
+
+        &:hover,
+        &:active,
+        &:focus,
+        &:focus-within {
+            &::after {
+                width: 100%;
+            }
+        }
+    }
+
+    .btn-secondary {
+        font-weight: 500;
+        color: #00A0E3;
+        font-size: 1.4rem;
+        line-height: 1.8rem;
+        position: relative;
+
+        &::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 0;
+            height: 1px;
+            background-color: #00A0E3;
+            transition: 0.3s ease;
+        }
+
+        &:hover {
+            &::after {
+                width: 100%;
+            }
+        }
+    }
+
+    .header-top__location-img {
+        width: 1.6rem;
+        height: 1.6rem;
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+        }
+    }
+
+    .header-top__location-text {
+        line-height: 1.3rem;
+        color: #064E8C;
+    }
+
+    .header-top__links {
+        display: flex;
+        align-items: center;
+        gap: 3.2rem;
+    }
+
+    .header-top__links-item {
+        line-height: 1.3rem;
+        transition: all 0.9s ease;
+        position: relative;
+
+        &::after {
+            content: '';
+            width: 0;
+            position: absolute;
+            height: 1px;
+            background-color: #064E8C;
+            bottom: 0;
+            left: 0;
+            transition: 0.3s ease;
+        }
+
+        &:hover {
+            color: #064E8C;
+
+            &::after {
+                width: 100%;
+            }
+        }
+
+        &:active,
+        &:focus,
+        &:focus-within {
+            color: #064E8C;
+
+            &::after {
+                width: 0;
+            }
+        }
+    }
+
+    .header-top__links-icons {
+        display: flex;
+        gap: 1.6rem;
+        align-items: center;
+
+        a svg path {
+            transition: 0.3s ease;
+        }
+
+        a:hover,
+        a:focus,
+        a:focus-within,
+        a:active {
+            svg {
+
+                path {
+                    fill: #064E8C;
+                }
+            }
+        }
+    }
+
+    .header-top__links-icons-basket,
+    .header-top__links-icons-user {
+        width: 2rem;
+        height: 2rem;
+
+        svg {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+        }
+    }
+
+    .header-top__links-icons-basket {
+        position: relative;
+        display: inline-block;
+
+        span {
+            position: absolute;
+            right: -0.8rem;
+            top: 0;
+            display: inline-flex;
+            width: 1.6rem;
+            justify-content: center;
+            align-items: center;
+            height: 1.6rem;
+            background-color: #00A0E3;
+            border-radius: 50%;
+            font-size: 0.9rem;
+            line-height: 1.1rem;
+            color: #fff;
+        }
+    }
+
+    .header-bottom {
+        padding: 1.5rem 0 2.3rem;
+        background-color: #FAFAFA;
+    }
+
+    .header-bottom__burger {
+        display: none;
+    }
+
+    .header-bottom__logo {
+        width: 7.8rem;
+        height: 5.6rem;
+        margin: 0;
+    }
+
+    .header-bottom__search {
+        display: flex;
+        align-items: flex-start;
+    }
+
+    .header-bottom__search-catalog {
+        display: inline-flex;
+        align-items: center;
+        gap: 0.8rem;
+        padding: 0.65rem 1.2rem;
+        color: #fff;
+        background-color: #064E8C;
+        transition: 0.3s ease;
+
+        &:hover {
+            background-color: #00A0E3;
+        }
+
+        &:active,
+        &:focus,
+        &:focus-within {
+            background-color: #0091CE;
+        }
+
+        svg {
+            width: 1.6rem;
+            height: 1.6rem;
+        }
+
+        span {
+            font-size: 1.2rem;
+            line-height: 1.5rem;
+            font-weight: 500;
+        }
+    }
+
+    .header-bottom__search-result.active {
+        width: 39.6rem;
+    }
+
+    .header-bottom__search-wrapper {
+        position: relative;
+    }
+
+    .header-buttom__search-input-btn {
+        display: none;
+    }
+
+    .header-bottom__search-input-buttons {
+        position: absolute;
+        right: 0.4rem;
+        top: 0.4rem;
+        display: flex;
+        align-items: center;
+        gap: 0.8rem;
+    }
+
+    .header-bottom__search-label,
+    .header-bottom__search-close {
+        width: 2rem;
+        height: 2rem;
+
+        svg {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+
+            path,
+            circle {
+                transition: 0.3s ease;
+            }
+        }
+    }
+
+    .header-bottom__search-close {
+        visibility: hidden;
+        opacity: 0;
+        transition: opacity 0.3s ease;
+    }
+
+    .header-bottom__search-close.active {
+        visibility: visible;
+        opacity: 1;
+    }
+
+    .header-bottom__search-label {
+        display: inline-block;
+
+        &:hover {
+
+            svg path,
+            svg circle {
+                stroke: #00A0E3;
+            }
+        }
+    }
+
+    .header-bottom__search-example {
+        position: absolute;
+        left: 1.6rem;
+        top: calc(100% + 0.8rem);
+        font-size: 1rem;
+        line-height: 1.3rem;
+
+        span {
+            color: #A3A8AB;
+            margin-right: 0.8rem;
+        }
+
+        a {
+            line-height: 1.3rem;
+            color: #00A0E3;
+            text-decoration: underline;
+        }
+    }
+
+    .header-bottom__links {
+        display: flex;
+        align-items: center;
+        gap: 3.2rem;
+    }
+
+    .header-bottom__links-item {
+        font-weight: 500;
+        font-size: 1.2rem;
+        line-height: 1.5rem;
+    }
+
+    /*КОНЕЦ СТИЛЕЙ ШАПКИ 1024*/
+
+    /*КАСТОМИЗАЦИЯ СВАЙПЕРОВ 1024*/
+    .recently {
+
+        .swiper-button-prev,
+        .swiper-button-next {
+            display: block;
+        }
+    }
+
+    .modal {
+        background-color: transparent;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        left: unset;
+        opacity: 0;
+        visibility: hidden;
+        z-index: -1;
+    }
+
+    .modal.active {
+        left: unset;
+        opacity: 1;
+        visibility: visible;
+        z-index: 1001;
+    }
+
+    .modal__background {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        background-color: rgba(38, 43, 46, 0);
+        transition: 0.8s ease;
+        visibility: hidden;
+        z-index: -1;
+    }
+
+    .modal__background.active {
+        background-color: rgba(38, 43, 46, 0.4);
+        visibility: visible;
+        z-index: 1000;
+    }
+
+    .mobile-menu {
+        display: none;
+    }
+
+    /*НАЧАЛО СТИЛЕЙ СЕКЦИИ ВЫ НЕДАВНО СМОТРЕЛИ 1024*/
+    .recently__card {
+        min-width: 35rem;
+        min-height: 9.5rem;
+    }
+
+    .recently__card-image {
+        width: 13.5rem;
+        height: 8.3rem;
+    }
+
+    .recently__card-info-cost {
+        gap: 1.6rem;
+    }
+
+    /*КОНЕЦ СТИЛЕЙ СЕКЦИИ ВЫ НЕДАВНО СМОТРЕЛИ 1024*/
+
+    /*НАЧАЛО СТИЛЕЙ МОДАЛЬНОГО КАТАЛОГА 1024*/
+    .catalog-modal {
+        background-color: #ffffff;
+        display: block;
+
+        .header-bottom {
+            padding-top: 3.3rem;
+            background-color: transparent;
+        }
+
+        .header {
+            .header__wrapper {
+                flex-direction: row;
+                gap: 13.7rem;
+                justify-content: flex-start;
+            }
+
+            .header-bottom__logo {
+                flex-shrink: 0;
+            }
+
+            .header-bottom__search {
+                max-width: 42.8rem;
+            }
+
+            .header-bottom__search-result.active {
+                width: 100%;
+            }
+
+            .header-bottom__search-example {
+                display: block;
+            }
+
+            .header-bottom__request {
+                position: absolute;
+                top: 3.3rem;
+                right: 6.4rem;
+            }
+        }
+
+        .catalog__stock {
+            display: block;
+        }
+
+        .spares__container {
+            display: grid;
+            grid-template-columns: repeat(2, 20.2rem);
+            gap: 2.4rem;
+        }
+
+        .spares__item-info-title {
+            line-height: 2rem;
+            font-size: 1.6rem;
+        }
+
+        .spares__item-info-models-item {
+            font-size: 1.2rem;
+            line-height: 1.5rem;
+        }
+
+        .catalog__stock-title {
+            font-size: 1.8rem;
+            line-height: 2.4rem;
+            margin-bottom: 2.4rem;
+        }
+    }
+
+    .catalog-modal__container {
+        padding: 0 6.4rem;
+        margin-top: 4rem;
+    }
+
+    .catalog-modal__groups,
+    .catalog-modal__spares {
+        max-height: calc(100vh - 12.9rem);
+    }
+
+    .catalog-modal__groups-wrapper {
+        width: 16.2rem;
+        gap: 1.4rem;
+    }
+
+    .catalog-modal__title {
+        margin-bottom: 2.4rem;
+    }
+
+    .catalog-modal__groups-item {
+        font-size: 1.2rem;
+        line-height: 1.5rem;
+        transition: 0.3s ease;
+
+        &:hover {
+            color: #00A0E3;
+        }
+    }
+
+    .catalog__stock-title {
+        font-size: 1.8rem;
+        line-height: 2.4rem;
+        margin-bottom: 2.4rem;
+    }
+
+    /*КОНЕЦ СТИЛЕЙ МОДАЛЬНОГО КАТАЛОГА 1024*/
+
+    /*НАЧАЛО СТИЛЕЙ МОДАЛКИ С ВЫБОРОМ ГОРОДА 1024*/
+    .modal-choice {
+
+        .header-fixed {
+            .header-bottom {
+                background-color: #ffffff;
+                padding-top: 2.4rem;
+                padding-bottom: 0;
+            }
+
+            .header-bottom__logo {
+                display: none;
+            }
+        }
+
+        .header-bottom__request-phone {
+            display: none;
+        }
+
+        .header__wrapper {
+            justify-content: flex-end;
+        }
+
+        .wrapper {
+            padding: 0 2.4rem;
+        }
+    }
+
+    .modal-choice__city-list-wrapper {
+        max-height: 28rem;
+    }
+
+    .modal-choice__content {
+        max-width: 40rem;
+        width: 100%;
+        max-height: 45.3rem;
+        height: 100%;
+        background-color: #ffffff;
+    }
+
+    .modal-choice__container {
+        margin-top: 1.2rem;
+    }
+
+    .modal-choice__title {
+        font-size: 2.6rem;
+        line-height: 3.2rem;
+    }
+
+    /*КОНЕЦ СТИЛЕЙ МОДАЛКИ С ВЫБОРОМ ГОРОДА 1024*/
+
+    /*СЕКЦИИ, У КОТОРЫХ МЕНЬШЕ МАРДЖИН 1024 */
+    .about,
+    .catalog-about {
+        margin-bottom: 5.6rem;
+    }
+
+    /*НАЧАЛО СТИЛЕЙ ХЛЕБНЫХ КРОШЕК 1024*/
+    .bread-crumbs {
+        margin: 6.4rem 0;
+    }
+
+    /*КОНЕЦ СТИЛЕЙ ХЛЕБНЫХ КРОШЕК 1024*/
+
+    /*КОНЕЦ ОБЩИХ СТИЛЕЙ 1024*/
+
+
+
+    /*НАЧАЛО СТИЛЕЙ ГЛАВНОГО ЭКРАНА 1024*/
+    .main {
+        padding: 5.6rem 0 8rem;
+
+        .title {
+            max-width: 49.6rem;
+            -ms-text-overflow: ellipsis;
+            -o-text-overflow: ellipsis;
+            text-overflow: ellipsis;
+            overflow: hidden;
+            -ms-line-clamp: 2;
+            -webkit-line-clamp: 2;
+            line-clamp: 2;
+            display: -webkit-box;
+            display: box;
+            word-wrap: break-word;
+            -webkit-box-orient: vertical;
+            box-orient: vertical;
+        }
+
+        .desc {
+            max-width: 48.1rem;
+            font-size: 1.4rem;
+            -ms-text-overflow: ellipsis;
+            -o-text-overflow: ellipsis;
+            text-overflow: ellipsis;
+            overflow: hidden;
+            -ms-line-clamp: 2;
+            -webkit-line-clamp: 2;
+            line-clamp: 2;
+            display: -webkit-box;
+            display: box;
+            word-wrap: break-word;
+            -webkit-box-orient: vertical;
+            box-orient: vertical;
+        }
+    }
+
+    .swiper-main__item {
+        padding: 0 1.6rem 0 6.4rem;
+    }
+
+    .swiper-main__item-wrapper {
+        align-items: flex-start;
+    }
+
+    .swiper-main__item-info {
+        position: relative;
+    }
+
+    .swiper-main__item-info-image {
+        width: 40rem;
+        height: 27.1rem;
+    }
+
+    .swiper-main {
+        .swiper-main__pagination {
+            position: absolute;
+            width: fit-content;
+            left: 6.4rem;
+            bottom: 1.7rem;
+            margin-top: 0;
+        }
+    }
+
+    /*КОНЕЦ СТИЛЕЙ ГЛАВНОГО ЭКРАНА 1024*/
+
+    /*НАЧАЛО СТИЛЕЙ СЕКЦИИ С ИКОНКАМИ 1024*/
+    .desc-icon {
+        padding: 3.2rem 0;
+    }
+
+    .desc-icon__item {
+        max-width: 23.9rem;
+    }
+
+    .desc-icon__item-img {
+        width: 5.6rem;
+        height: 5.6rem;
+    }
+
+    .desc-icon__text-title {
+        font-size: 1.6rem;
+        line-height: 2.6rem;
+    }
+
+    /*КОНЕЦ СТИЛЕЙ СЕКЦИИ С ИКОНКАМИ 1024*/
+
+    /*НАЧАЛО СТИЛЕЙ СЕКЦИИ ОРИГИНАЛЬНЫЕ ЗАПЧАСТИ 1024*/
+    .spares__container {
+        max-width: none;
+        justify-content: center;
+        grid-template-columns: repeat(2, 40rem);
+    }
+
+    .spares__item {
+        flex-direction: row;
+        align-items: flex-start;
+        max-width: 40rem;
+        width: 100%;
+    }
+
+    .spares__item-img {
+        width: 12rem;
+        height: 13rem;
+        margin-top: 0;
+        margin-right: 2.4rem;
+        flex-shrink: 0;
+    }
+
+    .spares__item-info {
+        flex-shrink: 0;
+    }
+
+    .spares__item-info-title {
+        min-height: unset;
+        max-width: unset;
+        text-align: left;
+        font-size: 2rem;
+        line-height: 3.2rem;
+        margin-bottom: 0.8rem;
+    }
+
+    .spares__item-info-models {
+        display: inline-flex;
+        flex-wrap: wrap;
+        max-width: 20rem;
+        grid-row-gap: 1.2rem;
+    }
+
+    .spares__item-info-models-item {
+        margin-right: 1.2rem;
+        display: inline-block;
+        padding: 0.4rem 0.8rem;
+        font-size: 1.2rem;
+        line-height: 1.5rem;
+        color: $blue;
+        transition: 0.3s ease;
+
+        &:hover {
+            color: #00A0E3;
+        }
+
+        &:active,
+        &:focus,
+        &:focus-within {
+            color: #0091CE;
+        }
+
+        &:nth-of-type(2n) {
+            margin-right: 0;
+        }
+    }
+
+    /*КОНЕЦ СТИЛЕЙ СЕКЦИИ ОРИГИНАЛЬНЫЕ ЗАПЧАСТИ 1024*/
+
+    /*НАЧАЛО СТИЛЕЙ СЕКЦИИ ТРАНСПОРТНЫЕ КОМПАНИИ, С КОТОРЫМИ МЫ РАБОТАЕМ 1024*/
+    .companies {
+        .scroll {
+            padding: 0;
+        }
+
+        .swiper-slide {
+            width: 8.9rem;
+        }
+    }
+
+    .swiper-companies {
+
+        .swiper-wrapper {
+            gap: unset;
+        }
+    }
+
+    .companies__image {
+        width: 8.9rem;
+        height: 8.9rem;
+    }
+
+    .companies__banner {
+        margin-top: 5.6rem;
+        padding: 1.6rem 0;
+    }
+
+    .companies__banner-text {
+        max-width: none;
+        font-size: 1.6rem;
+    }
+
+    /*КОНЕЦ СТИЛЕЙ СЕКЦИИ ТРАНСПОРТНЫЕ КОМПАНИИ, С КОТОРЫМИ МЫ РАБОТАЕМ 1024*/
+
+    /*НАЧАЛО СТИЛЕЙ СЕКЦИИ КАТАЛОГ 1024*/
+    .catalog__container {
+        flex-direction: row;
+        align-items: flex-end;
+    }
+
+    .catalog__stock {
+        width: 100%;
+        max-width: 20rem;
+        flex-shrink: 0;
+    }
+
+    .catalog__stock-title {
+        font-size: 2.4rem;
+        line-height: 4.2rem;
+        text-align: center;
+        margin-bottom: 1.6rem;
+    }
+
+    .catalog__stock-card {
+        padding: 5.3rem 1.1rem 2.4rem;
+        text-align: center;
+
+        .btn-arrow {
+            margin-top: 5.2rem;
+        }
+    }
+
+    .catalog__stock-card-container {
+        flex-direction: column;
+        gap: 2.4rem;
+    }
+
+    .catalog__stock-card-img {
+        width: 8.5rem;
+        height: 5.6rem;
+    }
+
+    .catalog__stock-card-name {
+        margin-bottom: 1.6rem;
+        line-height: 1.8rem;
+    }
+
+    .catalog__stock-card-cost {
+        flex-direction: column-reverse;
+        gap: 0.2rem;
+    }
+
+    .catalog__stock-card-cost-new {
+        font-size: 1.6rem;
+        line-height: 2rem;
+    }
+
+    .catalog__sections {
+        width: 100%;
+        grid-template-columns: repeat(3, 4fr);
+        grid-column-gap: 2.85rem;
+    }
+
+    .catalog__sections-item {
+        padding: 1.2rem;
+        // max-width: 20.473rem;
+        min-height: 13.6rem;
+
+        &:active,
+        &:focus,
+        &:focus-within,
+        &:hover {
+            background-color: #EDF8FD;
+
+            .catalog__sections-item-image {
+                right: 0;
+            }
+        }
+    }
+
+    .catalog__sections-item-title {
+        font-size: 1.4rem;
+        line-height: 1.8rem;
+    }
+
+    .catalog__sections-item-image {
+        width: 13.5rem;
+        height: 9rem;
+        top: calc(50% - 4.5rem);
+    }
+
+    .catalog__stock-card-cost-old {
+        font-size: 1rem;
+        line-height: 1.3rem;
+    }
+
+    /*КОНЕЦ СТИЛЕЙ СЕКЦИИ КАТАЛОГ 1024*/
+
+    /*НАЧАЛО СТИЛЕЙ СЕКЦИИ НАШИ ПАРТНЕРЫ 1024*/
+    .swiper-partners {
+
+        .swiper-wrapper {
+            gap: unset;
+        }
+
+        .swiper-slide {
+            width: 10rem;
+        }
+
+        .partners__logo {
+            width: 10rem;
+            height: 9.2rem;
+        }
+    }
+
+    /*КОНЕЦ СТИЛЕЙ СЕКЦИИ НАШИ ПАРТНЕРЫ 1024*/
+
+    /*НАЧАЛО СТИЛЕЙ СЕКЦИИ НАШИ НОВОСТИ 1024*/
+    .news__container {
+        grid-template-columns: repeat(3, 4fr);
+    }
+
+    .news__item-date {
+        font-size: 1.2rem;
+    }
+
+    .news__item-title {
+        font-size: 1.4rem;
+        line-height: 1.8rem;
+    }
+
+    .news__item-text {
+        font-size: 1.2rem;
+        line-height: 2.1rem;
+    }
+
+    /*КОНЕЦ СТИЛЕЙ СЕКЦИИ НАШИ НОВОСТИ 1024*/
+
+    /*НАЧАЛО СТИЛЕЙ СЕКЦИИ КОНТАКТЫ 1024*/
+    .contacts__info-item-title {
+        font-size: 1.8rem;
+        line-height: 2.3rem;
+    }
+
+    .contacts__info-item {
+        margin-bottom: 2.9rem;
+    }
+
+    .contacts__map {
+        width: 57.6rem;
+        height: 40rem;
+    }
+
+    .contacts__info-item-subtitle {
+        font-size: 1.4rem;
+        line-height: 1.8rem;
+    }
+
+    /*КОНЕЦ СТИЛЕЙ СЕКЦИИ КОНТАКТЫ 1024*/
+
+    /*НАЧАЛО СТИЛЕЙ СЕКЦИИ О КОМПАНИИ 1024*/
+
+    .about__container {
+        gap: 10.3rem;
+    }
+
+    .about__logo {
+        width: 20rem;
+        height: 14.4rem;
+    }
+
+    /*КОНЕЦ СТИЛЕЙ СЕКЦИИ О КОМПАНИИ 1024*/
+
+    /*НАЧАЛО СТИЛЕЙ ФУТЕРА 1024*/
+    .footer {
+        padding: 5.6rem 0 3.2rem;
+    }
+
+    .footer__container {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .footer__info-images {
+        text-align: center;
+    }
+
+    .footer__info-images-logo {
+        display: inline-block;
+        margin-bottom: 1.6rem;
+        width: 7.2rem;
+        height: 5.2rem;
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+        }
+    }
+
+    .footer__info-images-socials-item {
+        width: 2.1rem;
+        height: 2.1rem;
+    }
+
+    .footer__info-contacts-feedback-phone {
+        display: block;
+        margin-bottom: 1.6rem;
+    }
+
+    .footer__links {
+        display: flex;
+        gap: 6.4rem;
+    }
+
+    .footer__link {
+        position: relative;
+        margin-bottom: 1.6rem;
+        font-weight: 500;
+        color: #fff;
+        font-size: 1.4rem;
+        line-height: 1.8rem;
+        display: block;
+        width: fit-content;
+
+        &:nth-last-of-type(1) {
+            margin-bottom: 0;
+        }
+
+        &::after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 1px;
+            left: 0;
+            bottom: 0;
+            background-color: #ffffff;
+            transition: 0.3s ease;
+        }
+
+        &:hover,
+        &:active,
+        &:focus,
+        &:focus-within {
+            &::after {
+                width: 100%;
+            }
+        }
+    }
+
+    .foooter__links-wrapper-item {
+        margin-bottom: 1.6rem;
+
+        &:nth-last-of-type(1) {
+            margin-bottom: 0;
+        }
+    }
+
+    .footer__info {
+        gap: 6.6rem;
+    }
+
+    .footer__info-contacts-feedback-call {
+        font-weight: 500;
+        color: #fff;
+        font-size: 1.2rem;
+        line-height: 2.1rem;
+        text-decoration: underline;
+    }
+
+    .footer__info-contacts-text {
+        margin-bottom: 0.8rem;
+
+        &:nth-last-of-type(1) {
+            margin-bottom: 0;
+        }
+    }
+
+    .footer__copyright {
+        margin-top: 3.2rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+    }
+
+    .footer__copyright-text {
+        max-width: 55.5rem;
+        width: 100%;
+
+        p {
+            margin-bottom: 1.6rem;
+            line-height: 1.6rem;
+        }
+    }
+
+    .footer__copyright-upfly-wrapper {
+        margin-top: 1rem;
+        height: fit-content;
+    }
+
+    .footer__info-contacts-text {
+        font-size: 1.2rem;
+        line-height: 2.1rem;
+    }
+
+    .footer__copyright-text {
+        font-size: 1rem;
+        line-height: 1.3rem;
+    }
+
+    /*КОНЕЦ СТИЛЕЙ ФУТЕРА 1024*/
+
+    /*#################################################################################################################################*/
+    /*НАЧАЛО СТИЛЕЙ КАТАЛОГА 1 УРОВНЯ 1024*/
+
+    /*КАТАЛОГ АВТОЗАПЧАСТЕЙ 1024*/
+    .catalog-1lvl__container {
+        justify-content: center;
+
+        .catalog__sections-item {
+            min-height: 25.3rem;
+            max-width: 37.1rem;
+            padding: 1.6rem;
+        }
+
+        .catalog__sections-item-title {
+            font-size: 2rem;
+            line-height: 2.5rem;
+        }
+
+        .catalog__sections-item-image {
+            width: 21.5rem;
+            height: 21rem;
+            top: calc(50% - 10.5rem);
+            right: -8rem;
+        }
+    }
+
+    /*КОНЕЦ КАТАЛОГ АВТОЗАПЧАСТЕЙ 1024*/
+
+    /*НАЧАЛО СТИЛЕЙ СЕКЦИИ ПРО КАТАЛОГ АВТОЗАПЧАСТЕЙ 1024*/
+    .catalog-about {
+
+        .text {
+            p {
+                line-height: 1.8rem;
+                margin-bottom: 1.8rem;
+            }
+        }
+
+        .js-hide {
+            height: 18rem;
+        }
+    }
+
+    .catalog-about__container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .catalog-about__info {
+        flex-shrink: 0;
+        max-width: 53.2rem;
+    }
+
+    .catalog-about__banner {
+        margin: 0;
+        padding: 2.4rem 3.2rem;
+        flex-direction: column;
+        justify-content: unset;
+        gap: 1.6rem;
+        max-width: 30rem;
+        min-height: unset;
+
+        &::before {
+            content: none;
+        }
+    }
+
+    .catalog-about__banner-image {
+        width: 5.6rem;
+        height: 5.6rem;
+    }
+
+    .catalog-about__banner-info-text {
+        line-height: 1.8rem;
+    }
+
+    /*КОНЕЦ СТИЛЕЙ СЕКЦИИ ПРО КАТАЛОГ АВТОЗАПЧАСТЕЙ 1024*/
+
+    /*КОНЕЦ СТИЛЕЙ КАТАЛОГА 1 УРОВНЯ 1024*/
+
+    /*#################################################################################################################################*/
+    /*НАЧАЛО СТИЛЕЙ КАТАЛОГА 2 УРОВНЯ 1024*/
+    .catalog-2lvl,
+    .catalog-3lvl {
+        .catalog__sections {
+            grid-template-columns: repeat(4, 3fr);
+            grid-row-gap: 1.6rem;
+            grid-column-gap: 1.6rem;
+        }
+
+        // .catalog__sections-item {
+        //     max-width: 21.2rem;
+        // }
+    }
+
+    /*КОНЕЦ СТИЛЕЙ КАТАЛОГА 2 УРОВНЯ 1024*/
+
+    /*#################################################################################################################################*/
+    /*НАЧАЛО СТИЛЕЙ КАТАЛОГА 3 УРОВНЯ 1024*/
+    .catalog-3lvl {
+        .catalog__sections {
+            margin-top: 4.8rem;
+        }
+
+        .btn-arrow {
+            margin-top: 1.2rem;
+        }
+    }
+
+    .to-encyclopedia {
+        display: flex;
+        gap: 2.4rem;
+        align-items: center;
+    }
+
+    .to-encyclopedia__image {
+        display: block;
+        width: 17.6rem;
+        height: 10.8rem;
+        flex-shrink: 0;
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+        }
+    }
+
+    .to-encyclopedia__info-text {
+        max-width: 68.2rem;
+        line-height: 2.6rem;
+        -ms-line-clamp: 3;
+        -webkit-line-clamp: 3;
+        line-clamp: 3;
+    }
+
+    /*КОНЕЦ СТИЛЕЙ КАТАЛОГА 3 УРОВНЯ 1024*/
+
+    /*#################################################################################################################################*/
+    /*НАЧАЛО СТИЛЕЙ МАРОК 1024*/
+    .brands {
+        .desc {
+            max-width: 58.6rem;
+        }
+    }
+
+    .brands__scroll {
+        padding: 0 6.4rem;
+    }
+
+    .brands__wrapper {
+        grid-column-gap: 2.4rem;
+    }
+
+    .brands__item {
+        padding: 1.6rem;
+        height: 19.2rem;
+    }
+
+    .brands__item-image {
+        width: 17.9rem;
+        height: 11rem;
+    }
+
+    .brands__item-name {
+        font-size: 1.6rem;
+        line-height: 2.8rem;
+    }
+
+    /*КОНЕЦ СТИЛЕЙ МАРОК 1024*/
+
+    /*#################################################################################################################################*/
+    /*НАЧАЛО СТИЛЕЙ КАТАЛОГА 4 УРОВНЯ 1024*/
+    .catalog-4lvl {
+        .js-hide {
+            height: 5.2rem;
+        }
+    }
+
+    .category__scroll {
+        overflow-x: unset;
+        padding: 0 6.4rem;
+    }
+
+    .category__container {
+        flex-wrap: wrap;
+        gap: 2.4rem;
+    }
+
+    .category__item {
+        font-size: 1.6rem;
+        line-height: 2rem;
+    }
+
+    .catalog-4lvl__container {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .catalog-4lvl__filters {
+        display: block;
+        min-width: 20rem;
+        max-width: 20rem;
+    }
+
+    .catalog-4lvl__catalog-item {
+        padding: 0.8rem 0.8rem 1.6rem;
+        min-height: 34.7rem;
+        display: flex;
+        flex-direction: column;
+        overflow: hidden;
+        min-width: 20rem;
+        transition: 0.3s ease;
+
+        &:hover {
+            background-color: #F5FBFE;
+        }
+
+        .buy {
+            min-width: unset;
+            width: 100%;
+        }
+
+        .catalog-4lvl__catalog-item-image {
+            margin: 0;
+        }
+
+        .catalog-4lvl__catalog-item-manufacturer {
+            text-align: center;
+            margin: 0.4rem auto 0;
+        }
+
+        .catalog-4lvl__catalog-item-name {
+            text-align: center;
+            font-size: 1.4rem;
+            line-height: 1.8rem;
+        }
+
+        .catalog-4lvl__catalog-item-article {
+            margin-top: 1.6rem;
+        }
+
+        .catalog-4lvl__catalog-item-bottom {
+            gap: 0.4rem;
+        }
+
+        .catalog-4lvl__catalog-item-image-label {
+            position: static;
+            margin: 0;
+        }
+
+        .catalog-4lvl__catalog-item-bottom {
+            margin-top: auto;
+        }
+
+        .catalog-4lvl__catalog-item-bottom-buttons-basket {
+            padding: 0.45rem 0;
+            height: fit-content;
+        }
+    }
+
+    .catalog-4lvl__catalog-lines-item-card {
+        gap: 2.4rem;
+    }
+
+    .catalog-4lvl__catalog {
+        width: 100%;
+        max-width: 64.8rem;
+    }
+
+    .catalog-4lvl__catalog-lines-item-wrapper {
+        padding: 1.2rem 0.8rem 1.2rem 0;
+        transition: 0.3s ease;
+
+        &:hover {
+            background-color: #F5FBFE;
+        }
+
+    }
+
+    .catalog-4lvl__catalog-item-image-label {
+        top: 1.2rem;
+    }
+
+    .catalog-4lvl__catalog-tile-container {
+        display: grid;
+        grid-template-columns: repeat(3, 4fr);
+        gap: 2.4rem;
+    }
+
+    .catalog-4lvl__catalog-buttons-filters {
+        display: none;
+    }
+
+    .catalog-4lvl__catalog-buttons-tabs {
+        display: flex;
+        align-items: center;
+        gap: 1.6rem;
+    }
+
+    .catalog-4lvl__catalog-buttons-tabs-item {
+        width: 2.4rem;
+        height: 2.4rem;
+
+        svg {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+
+            path,
+            rect {
+                transition: 0.3s ease;
+            }
+        }
+
+        &:hover {
+
+            svg path,
+            svg rect {
+                fill: #99D9F4;
+            }
+        }
+    }
+
+    .catalog-4lvl__catalog-buttons-tabs-item.active {
+
+        svg path,
+        svg rect {
+            fill: #00A0E3;
+        }
+    }
+
+    .catalog-4lvl__catalog-tile,
+    .catalog-4lvl__catalog-lines {
+        margin-top: 1.6rem;
+    }
+
+    .catalog-4lvl__catalog-item-bottom-buttons-basket {
+        justify-content: space-between;
+        align-items: center;
+        margin: 0;
+
+        form {
+            min-width: 9.7rem;
+        }
+    }
+
+    .catalog-4lvl__catalog-item-bottom-buttons-basket-text {
+        display: block;
+        font-size: 1.4rem;
+        line-height: 1.8rem;
+        color: #064E8C;
+    }
+
+    .catalog-4lvl__catalog-item-bottom-buttons {
+        min-width: 21.8rem;
+    }
+
+    /*КОНЕЦ СТИЛЕЙ КАТАЛОГА 4 УРОВНЯ 1024*/
+}
+
+/*КОНЕЦ АДАПТИВА 1024*/
+
+/*НАЧАЛО АДАПТИВА 1500*/
+
+@media(min-width: 1500px) {
+
+    /*НАЧАЛО ОБЩИХ СТИЛЕЙ 1500*/
+    html {
+        font-size: 0.666668vw;
+    }
+
+    .title {
+        font-size: 3rem;
+        line-height: 4.2rem;
+    }
+
+    section {
+        margin-bottom: 12.8rem;
+    }
+
+    .wrapper {
+        padding: 0 8rem;
+    }
+
+    /*КАСТОМИЗАЦИЯ СВАЙПЕРА 1500*/
+    .swiper-not-mobile {
+        padding: 0 8rem;
+    }
+
+    /*НАЧАЛО СТИЛЕЙ ШАПКИ 1500*/
+    .header-fixed {
+        top: -8rem;
+
+        .header-bottom__logo {
+            width: 6.7rem;
+            height: 4.8rem;
+        }
+
+        // ПРОВЕРИТЬ
+        // .header-bottom__request {
+        //     margin-right: -3.6rem;
+        // }
+    }
+
+    .header-bottom {
+        padding: 1.5rem 0;
+    }
+
+    .header-bottom__logo {
+        width: 11.5rem;
+        height: 8.3rem;
+    }
+
+    .header-bottom__search-input {
+        width: 51.6rem;
+    }
+
+    .header-bottom__request-btn {
+        padding: 0.5rem 1.6rem;
+    }
+
+    .header-bottom__search-result.active {
+        width: 100%;
+    }
+
+    .header-bottom__search-result-item-name {
+        font-size: 1.2rem;
+        line-height: 2.1rem;
+    }
+
+    /*КОНЕЦ СТИЛЕЙ ШАПКИ 1500*/
+
+    /*НАЧАЛО СТИЛЕЙ МОДАЛЬНОГО КАТАЛОГА 1500*/
+    .catalog-modal {
+        .header-bottom {
+            padding-top: 4rem;
+        }
+
+        .header {
+            .header__wrapper {
+                gap: 10rem;
+            }
+
+            .header-bottom__logo {
+                width: 7.8rem;
+                height: 5.6rem;
+            }
+
+            .header-bottom__search {
+                max-width: 84.9rem;
+            }
+
+            .header-bottom__request {
+                top: 4rem;
+                right: 8rem;
+            }
+        }
+
+        .spares__container {
+            gap: unset;
+            grid-template-columns: repeat(2, 27.8rem);
+            grid-column-gap: 4rem;
+            max-height: 28rem;
+            overflow: hidden;
+            grid-row-gap: unset;
+        }
+
+        .spares__item-info-title {
+            font-size: 1.8rem;
+            line-height: 2.3rem;
+        }
+
+        .spares__item {
+            max-width: 27.8rem;
+            margin-bottom: 2.4rem;
+        }
+
+        .spares__item-info {
+            width: fit-content;
+        }
+    }
+
+    .catalog-modal__groups-container {
+        min-width: 13.8rem;
+        max-width: 31.6rem;
+        overflow: hidden;
+
+        &.width-100 {
+            width: 100%;
+        }
+    }
+
+
+
+    .catalog-modal__groups {
+        min-width: 13.8rem;
+        max-width: 31.6rem;
+        overflow: visible;
+        padding: 0;
+    }
+
+    .catalog-modal__groups-wrapper {
+        min-width: 13.8rem;
+        max-width: 31.6rem;
+        width: 100%;
+        max-height: 29.1rem;
+        gap: unset;
+        // display: grid;
+        // grid-template-rows: repeat(10, 1.5rem);
+        // grid-auto-flow: column;
+        grid-column-gap: 4rem;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .catalog-modal__groups-item {
+        max-width: 13.8rem;
+        margin-bottom: 1.4rem;
+
+        &:nth-child(10n) {
+            margin-bottom: 0;
+        }
+    }
+
+    .catalog-modal__spares {
+        overflow: unset;
+    }
+
+    .catalog-modal__title {
+        font-size: 2rem;
+        line-height: 2.8rem;
+    }
+
+    /*КОНЕЦ СТИЛЕЙ МОДАЛЬНОГО КАТАЛОГА 1500*/
+
+    /*СЕКЦИИ, У КОТОРЫХ МЕНЬШЕ МАРДЖИН  1500*/
+    .about,
+    .catalog-about {
+        margin-bottom: 6.4rem;
+    }
+
+    /*КОНЕЦ ОБЩИХ СТИЛЕЙ 1500*/
+
+    /*НАЧАЛО СТИЛЕЙ ГЛАВНОГО ЭКРАНА 1500*/
+    .main {
+        padding: 6.4rem 0 8rem;
+
+        .title {
+            max-width: 69.8rem;
+        }
+
+        .desc {
+            max-width: 69.8rem;
+        }
+    }
+
+    .swiper-main__item {
+        padding: 0 8rem;
+    }
+
+    .btn-main__wrapper {
+        margin-top: 3.2rem;
+    }
+
+    .swiper-main__item-info-image {
+        width: 50rem;
+        height: 33.6rem;
+    }
+
+    .swiper-main {
+        .swiper-main__pagination {
+            bottom: 4.2rem;
+            left: 8rem;
+        }
+    }
+
+    /*КОНЕЦ СТИЛЕЙ ГЛАВНОГО ЭКРАНА 1500*/
+
+    /*НАЧАЛО СТИЛЕЙ СЕКЦИИ С ИКОНКАМИ 1500*/
+    .desc-icon {
+        padding: 5.6rem 0;
+    }
+
+    /*КОНЕЦ СТИЛЕЙ СЕКЦИИ С ИКОНКАМИ 1500*/
+
+    /*НАЧАЛО СТИЛЕЙ СЕКЦИИ ОРИГИНАЛЬНЫЕ ЗАПЧАСТИ 1500*/
+    .spares__container {
+        grid-template-columns: repeat(2, 44.3rem);
+    }
+
+    .spares__item {
+        max-width: 44.3rem;
+    }
+
+    .spares__item-img {
+        margin-right: 4rem;
+    }
+
+    .spares__item-info-title {
+        font-size: 2.4rem;
+        line-height: 3.6rem;
+    }
+
+    .spares__item-info-models {
+        max-width: 29.3rem;
+    }
+
+    .spares__item-info-models-item {
+        &:nth-of-type(2n) {
+            margin-right: 1.2rem;
+        }
+
+        &:nth-of-type(3n) {
+            margin-right: 0;
+        }
+    }
+
+    /*КОНЕЦ СТИЛЕЙ СЕКЦИИ ОРИГИНАЛЬНЫЕ ЗАПЧАСТИ 1500*/
+
+    /*НАЧАЛО СТИЛЕЙ СЕКЦИИ ТРАНСПОРТНЫЕ КОМПАНИИ, С КОТОРЫМИ МЫ РАБОТАЕМ 1500*/
+    .companies {
+        .swiper-slide {
+            width: 9.2rem;
+        }
+    }
+
+    // .swiper-companies {
+    //     padding: 0 16.5rem;
+    // }
+
+    .companies__image {
+        width: 9.2rem;
+        height: 9.2rem;
+    }
+
+    .companies__banner-text {
+        font-size: 1.8rem;
+        line-height: 2.6rem;
+    }
+
+    /*КОНЕЦ СТИЛЕЙ СЕКЦИИ ТРАНСПОРТНЫЕ КОМПАНИИ, С КОТОРЫМИ МЫ РАБОТАЕМ 1500*/
+
+    /*НАЧАЛО СТИЛЕЙ СЕКЦИИ КАТАЛОГ 1500*/
+    .catalog {
+
+        .catalog__sections-item {
+
+            &:nth-last-of-type(1),
+            &:nth-last-of-type(2) {
+                display: flex;
+            }
+        }
+    }
+
+    .catalog__container {
+        max-width: 111.5rem;
+    }
+
+    .catalog__sections {
+        grid-template-columns: repeat(4, 3fr);
+        grid-column-gap: 2.427rem;
+    }
+
+    /*КОНЕЦ СТИЛЕЙ СЕКЦИИ КАТАЛОГ 1500*/
+
+    /*НАЧАЛО СТИЛЕЙ СЕКЦИИ НАШИ НОВОСТИ 1500*/
+    .news__container {
+        grid-template-columns: repeat(4, 3fr);
+    }
+
+    .news__item {
+        max-width: 29.9rem;
+    }
+
+    .news__item-title {
+        font-size: 1.6rem;
+        line-height: 2rem;
+    }
+
+    /*КОНЕЦ СТИЛЕЙ СЕКЦИИ НАШИ НОВОСТИ 1500*/
+
+    /*НАЧАЛО СТИЛЕЙ СЕКЦИИ КОНТАКТЫ 1500*/
+
+    .contacts__info-item {
+        max-width: none;
+    }
+
+    .contacts__map {
+        width: 102rem;
+    }
+
+    /*КОНЕЦ СТИЛЕЙ СЕКЦИИ КОНТАКТЫ 1500*/
+
+    /*НАЧАЛО СТИЛЕЙ СЕКЦИИ О КОМПАНИИ 1500*/
+    .about__container {
+        max-width: 118.3rem;
+    }
+
+    /*КОНЕЦ СТИЛЕЙ СЕКЦИИ О КОМПАНИИ 1500*/
+
+    /*НАЧАЛО СТИЛЕЙ ФУТЕРА 1500*/
+    .footer {
+        padding: 6.4rem 0 4.8rem;
+    }
+
+    .footer__info-contacts {
+        max-width: none;
+        flex-shrink: 0;
+    }
+
+    .footer__info-contacts-feedback {
+        display: flex;
+        max-width: none;
+        gap: 1.6rem;
+    }
+
+    .footer__info-contacts-feedback-phone,
+    .footer__info-contacts-feedback-mail {
+        max-width: 16.1rem;
+        width: 100%;
+        flex-shrink: 0;
+    }
+
+    .footer__links-wrapper {
+        display: flex;
+        gap: 6.4rem;
+    }
+
+    .foooter__links-wrapper-item {
+        margin-bottom: 0;
+    }
+
+    .footer__copyright {
+        margin-top: 5.6rem;
+    }
+
+    .footer__copyright-text {
+        max-width: 78.4rem;
+    }
+
+    .footer__info-contacts-feedback-phone {
+        margin-bottom: 0;
+    }
+
+    /*КОНЕЦ СТИЛЕЙ ФУТЕРА 1500*/
+
+    /*#################################################################################################################################*/
+    /*НАЧАЛО СТИЛЕЙ КАТАЛОГА 1 УРОВНЯ 1500*/
+
+    /*КАТАЛОГ АВТОЗАПЧАСТЕЙ 1500*/
+    .catalog-1lvl__container {
+        gap: 5.6rem;
+
+        .catalog__sections-item {
+            padding: 2.1rem 2.3rem;
+            min-height: 27.3rem;
+            max-width: 40rem;
+        }
+
+        .catalog__sections-item-title {
+            font-size: 2.4rem;
+            line-height: 3rem;
+        }
+
+        .catalog__sections-item-image {
+            width: 22.4rem;
+            height: 22.4rem;
+        }
+    }
+
+    /*КОНЕЦ КАТАЛОГ АВТОЗАПЧАСТЕЙ 1500*/
+
+    /*НАЧАЛО СТИЛЕЙ СЕКЦИИ ПРО КАТАЛОГ АВТОЗАПЧАСТЕЙ 1500*/
+    .catalog-about {
+        .js-hide {
+            height: 12.6rem;
+        }
+    }
+
+    .catalog-about__info {
+        max-width: 88rem;
+    }
+
+    .catalog-about__banner-info-text {
+        font-size: 1.6rem;
+        line-height: 2rem;
+    }
+
+    /*КОНЕЦ СТИЛЕЙ СЕКЦИИ ПРО КАТАЛОГ АВТОЗАПЧАСТЕЙ 1500*/
+
+    /*КОНЕЦ СТИЛЕЙ КАТАЛОГА 1 УРОВНЯ 1500*/
+
+    /*#################################################################################################################################*/
+    /*НАЧАЛО СТИЛЕЙ КАТАЛОГА 2 УРОВНЯ 1500*/
+    .catalog-2lvl,
+    .catalog-3lvl {
+        .catalog__sections {
+            grid-template-columns: repeat(5, 2.4fr);
+            grid-row-gap: 2.4rem;
+            grid-column-gap: 2.5rem;
+        }
+    }
+
+    /*КОНЕЦ СТИЛЕЙ КАТАЛОГА 2 УРОВНЯ 1500*/
+
+    /*#################################################################################################################################*/
+    /*НАЧАЛО СТИЛЕЙ КАТАЛОГА 3 УРОВНЯ 1500*/
+    .to-encyclopedia {
+        gap: 3.2rem;
+    }
+
+    .to-encyclopedia__image {
+        width: 21.2rem;
+        height: 13rem;
+    }
+
+    .to-encyclopedia__info-text {
+        max-width: 80.9rem;
+        -ms-line-clamp: 2;
+        -webkit-line-clamp: 2;
+        line-clamp: 2;
+    }
+
+    /*КОНЕЦ СТИЛЕЙ КАТАЛОГА 3 УРОВНЯ 1500*/
+
+    /*#################################################################################################################################*/
+    /*НАЧАЛО СТИЛЕЙ МАРОК 1500*/
+    .brands__scroll {
+        padding: 0 8rem;
+    }
+
+    .brands__item {
+        height: 22.2rem;
+    }
+
+    .brands__wrapper {
+        grid-template-columns: repeat(4, 3fr);
+        gap: 3.2rem;
+    }
+
+    .brands__item {
+        padding: 2.1rem 1.6rem 1.6rem 1.6rem;
+    }
+
+    .brands__item-image {
+        width: 22.3rem;
+        height: 13.6rem;
+    }
+
+    /*КОНЕЦ СТИЛЕЙ МАРОК 1500*/
+
+    /*#################################################################################################################################*/
+    /*НАЧАЛО СТИЛЕЙ КАТАЛОГА 4 УРОВНЯ 1500*/
+    .catalog-4lvl__filters {
+        min-width: 30rem;
+    }
+
+    .catalog-4lvl__catalog-tile-container {
+        grid-template-columns: repeat(4, 3fr);
+        grid-column-gap: 4rem;
+        grid-row-gap: 3.2rem;
+    }
+
+    .catalog-4lvl__catalog-item {
+        min-width: 21.8rem;
+        min-height: 35.5rem;
+        padding: 1.6rem 0.8rem 1.5rem;
+    }
+
+    .catalog-4lvl__catalog-lines-item-info-top {
+        max-width: 40rem;
+    }
+
+    /*КОНЕЦ СТИЛЕЙ КАТАЛОГА 4 УРОВНЯ 1500*/
+
+}
+
+/*КОНЕЦ АДАПТИВА 1500*/
